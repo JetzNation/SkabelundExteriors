@@ -18,7 +18,11 @@
         android:id="@+id/shingleColors"
         android:name="com.example.skabelundexteriors.ShingleColors"
         android:label="fragment_shingle_colors"
-        tools:layout="@layout/fragment_shingle_colors" />
+        tools:layout="@layout/fragment_shingle_colors" >
+        <action
+            android:id="@+id/action_shingleColors_to_blackWalnut"
+            app:destination="@id/blackWalnut" />
+    </fragment>
     <fragment
         android:id="@+id/blackWalnut"
         android:name="com.example.skabelundexteriors.BlackWalnut"
