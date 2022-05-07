@@ -22,10 +22,18 @@
         <action
             android:id="@+id/action_shingleColors_to_blackWalnut"
             app:destination="@id/blackWalnut" />
+        <action
+            android:id="@+id/action_shingleColors_to_forestGreen"
+            app:destination="@id/forestGreen" />
     </fragment>
     <fragment
         android:id="@+id/blackWalnut"
         android:name="com.example.skabelundexteriors.BlackWalnut"
         android:label="fragment_black_walnut"
         tools:layout="@layout/fragment_black_walnut" />
+    <fragment
+        android:id="@+id/forestGreen"
+        android:name="com.example.skabelundexteriors.forestGreen"
+        android:label="fragment_forest_green"
+        tools:layout="@layout/fragment_forest_green" />
 </navigation>
