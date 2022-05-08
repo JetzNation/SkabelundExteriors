@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/shingleColors"
-        android:name="com.example.skabelundexteriors.ShingleColors"
+        android:name="com.example.skabelundexteriors.shingleColors"
         android:label="fragment_shingle_colors"
         tools:layout="@layout/fragment_shingle_colors" >
         <action
@@ -25,15 +25,47 @@
         <action
             android:id="@+id/action_shingleColors_to_forestGreen"
             app:destination="@id/forestGreen" />
+        <action
+            android:id="@+id/action_shingleColors_to_mountainSlate"
+            app:destination="@id/mountainSlate" />
+        <action
+            android:id="@+id/action_shingleColors_to_harvestGold"
+            app:destination="@id/harvestGold" />
     </fragment>
     <fragment
         android:id="@+id/blackWalnut"
-        android:name="com.example.skabelundexteriors.BlackWalnut"
+        android:name="com.example.skabelundexteriors.blackWalnut"
         android:label="fragment_black_walnut"
-        tools:layout="@layout/fragment_black_walnut" />
+        tools:layout="@layout/fragment_black_walnut" >
+        <action
+            android:id="@+id/action_blackWalnut_to_shingleColors"
+            app:destination="@id/shingleColors" />
+    </fragment>
     <fragment
         android:id="@+id/forestGreen"
         android:name="com.example.skabelundexteriors.forestGreen"
         android:label="fragment_forest_green"
-        tools:layout="@layout/fragment_forest_green" />
+        tools:layout="@layout/fragment_forest_green" >
+        <action
+            android:id="@+id/action_forestGreen_to_shingleColors"
+            app:destination="@id/shingleColors" />
+    </fragment>
+    <fragment
+        android:id="@+id/harvestGold"
+        android:name="com.example.skabelundexteriors.harvestGold"
+        android:label="fragment_harvest_gold"
+        tools:layout="@layout/fragment_harvest_gold" >
+        <action
+            android:id="@+id/action_harvestGold_to_shingleColors"
+            app:destination="@id/shingleColors" />
+    </fragment>
+    <fragment
+        android:id="@+id/mountainSlate"
+        android:name="com.example.skabelundexteriors.mountainSlate"
+        android:label="fragment_mountain_slate"
+        tools:layout="@layout/fragment_mountain_slate" >
+        <action
+            android:id="@+id/action_mountainSlate_to_shingleColors"
+            app:destination="@id/shingleColors" />
+    </fragment>
 </navigation>

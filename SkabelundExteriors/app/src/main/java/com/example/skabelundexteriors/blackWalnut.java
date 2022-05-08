@@ -10,20 +10,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class HomeScreen extends Fragment {
+public class blackWalnut extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        NavController controller = NavHostFragment.findNavController(this);
+        NavController navController = NavHostFragment.findNavController(this);
 
-        View view = inflater.inflate(R.layout.fragment_home_screen, container, false);
-
-        view.findViewById(R.id.home_screen_button).setOnClickListener(button -> {
-            controller.navigate(R.id.action_homeScreen_to_shingleColors);
+        View view = inflater.inflate(R.layout.fragment_black_walnut, container, false);
+        view.findViewById(R.id.back_button).setOnClickListener(button -> {
+            navController.navigate(R.id.action_blackWalnut_to_shingleColors);
         });
-
-
         return view;
     }
 }

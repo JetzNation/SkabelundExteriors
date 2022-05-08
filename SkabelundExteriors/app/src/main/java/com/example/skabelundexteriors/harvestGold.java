@@ -11,22 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ShingleColors extends Fragment {
+public class harvestGold extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         NavController navController = NavHostFragment.findNavController(this);
 
-        View view = inflater.inflate(R.layout.fragment_shingle_colors, container, false);
-
-        view.findViewById(R.id.black_walnut).setOnClickListener(button -> {
-            navController.navigate(R.id.action_shingleColors_to_blackWalnut);
+        View view = inflater.inflate(R.layout.fragment_harvest_gold, container, false);
+        view.findViewById(R.id.back_button_3).setOnClickListener(button -> {
+            navController.navigate(R.id.action_harvestGold_to_shingleColors);
         });
-        view.findViewById(R.id.forest_green).setOnClickListener(button -> {
-            navController.navigate(R.id.action_shingleColors_to_forestGreen);
-        });
-
         return view;
     }
 }
